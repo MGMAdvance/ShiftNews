@@ -1,0 +1,219 @@
+/*
+
+PREFIXER
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    -webkit-transition: all 0.40s cubic-bezier(0.71, -0.1, 0.46, 1.34);
+    transition: all 0.40s cubic-bezier(0.71, -0.1, 0.46, 1.34);
+}
+
+body{ margin: 0; font-family: 'Roboto', sans-serif; }
+
+/* Login.php */
+
+.login-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.login-box{
+    width: 360px;
+    height: 360px;
+    border-top: 4px solid rgb(12, 54, 173);
+    background: #222;
+    border-radius: 7px;
+    
+    justify-content: center;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.login-box > form {
+    padding-top: 10vh;
+}
+
+.login-black{
+    background-color: rgba(0, 0, 0, 0.741);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    
+}
+
+.cadastro-login{
+    color: white;
+    text-transform: uppercase;
+}
+
+.span-login{
+    color: white;
+}
+.span-login > p a{
+    text-decoration: none;
+}
+.span-login > b:hover a:hover{
+    color: #3cf;
+}
+.span-login > b:hover a:focus{
+    color: red;
+}
+/* index.php */
+
+.index-div{
+    margin: 10px;
+}
+.index-section{
+    box-shadow: 1px 1px 4px 0px;
+    padding: 10px;
+}
+
+footer{
+    position: absolute;
+    background-color: #333;
+    color: #FFF; 
+    text-align: center; 
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.logo-footer{
+    padding: 20px;
+    width: 14vw;
+    height: inherit;
+    opacity: 0.3;
+}
+.logo-footer:hover{
+    opacity: 1;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #03c;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.ativo) {background-color: #333;}
+
+ul.topnav li a.ativo {background-color: #111;}
+
+ul.topnav li.direita {float: right;}
+
+/* menu mobile */
+
+.mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.mobile ul {
+    display: none;
+}
+.mobile button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,0.8) url("https://i.imgur.com/vKRaKDX.png") center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.mobile button.expanded {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background-color: #03c;
+    border: 0;
+}
+
+/* mobile */
+
+@media screen and (max-width: 760px){
+    
+    /* LOGO FOOTER */
+
+    .logo-footer{
+        padding: 10px;
+    }
+
+    /* index.php mobile */
+
+    ul.topnav li.direita, 
+    ul.topnav li {float: none;}
+
+    .centro{text-align: center;}
+
+    .org{width: 100%; height: 50%;}
+
+    /* index.php mobile MENU */
+    
+    .mobile{
+        display: block;
+        z-index: 3;
+    }
+
+    .desktop > *{
+        display: none;
+        opacity: 0;
+    }
+
+    /* login.php mobile */
+
+    .login-section{
+        
+    }
+
+    .login-box > form {
+        padding-top: 0;
+    }
+
+    .login-box{
+        width: 100vw;
+        height: 100vh;
+        border-top: 4px solid rgb(12, 54, 173);
+        background: #222;
+        border-radius: 7px;
+        
+        justify-content: center;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .login-black{
+        background-color: rgba(0, 0, 0, 0.741);
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+}

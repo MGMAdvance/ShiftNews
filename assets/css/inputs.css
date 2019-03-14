@@ -1,0 +1,85 @@
+/*
+
+PREFIXER
+
+*/
+input[type=text], input[type=password], select, input[type=email] {
+    max-width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 3px solid rgb(12, 54, 173);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=text]:focus, input[type=password]:focus, select:focus, input[type=email]:focus {
+    border: 3px solid #06f;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgb(12, 54, 173);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #06f;
+	-webkit-transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+	-o-transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+	transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+}
+
+input[type=button]:focus, input[type=submit]:focus, input[type=reset]:focus {
+	background-color: rgba(12, 186, 173, 1);
+	-webkit-transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+	-o-transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+	transition: all 0.40s cubic-bezier(0.25, 0.46, 0, 2.44);
+	outline: none;
+}
+
+@media screen and (max-width: 760px) {
+
+	input[type=submit], input[type=button], input[type=reset]{
+		text-transform: uppercase;
+	}
+
+	input[type=text], input[type=password], select, input[type=email] {
+	    width: 80vw;
+	    padding: 12px 20px;
+	    margin: 8px 0;
+	    -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+	    border: 3px solid rgb(12, 54, 173);
+	    -webkit-transition: 0.5s;
+	    -o-transition: 0.5s;
+	    transition: 0.5s;
+	    outline: none;
+	    font-family: 'Roboto', sans-serif;
+	}
+
+	input[type=button], input[type=submit], input[type=reset] {
+	    width: 80vw;
+	    background-color: rgb(12, 54, 173);
+	    border: none;
+	    color: white;
+	    padding: 16px 32px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	    font-family: 'Roboto', sans-serif;
+	}
+}
+
+input[type=*]{
+	text-decoration: none;
+}
